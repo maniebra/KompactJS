@@ -1,0 +1,23 @@
+@import url("./../base/pallete.css");
+@import url("./../base/fonts.css");
+@import url("./../base/vars.css");
+
+button {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px;
+  width: 180px;
+  font-family: sans-font;
+  font-size: 12pt;
+  transition-duration: var(--normal-transition);
+}
+
+button:hover {
+  filter: brightness(110%) saturate(100%);
+  box-shadow: 0 0 10px var(--darkshade);
+  font-weight: 500;
+}
+
+button:focus-within {
+  box-shadow: inset 0 0 10px var(--darkshade);
+}
